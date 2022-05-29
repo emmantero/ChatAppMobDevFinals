@@ -7,5 +7,3 @@
 - npm start or expo start
 - scan QR CODE
 - enjoy 
-
-#P.S made new repo cause I messed up the prev repo xd very sorry im noob
