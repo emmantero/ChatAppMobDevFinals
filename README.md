@@ -7,3 +7,8 @@
 - npm start or expo start
 - scan QR CODE
 - enjoy 
+
+
+#sample account for logging in:
+- email: sample@gmail.com
+- password: helloworld
