@@ -45,9 +45,9 @@ export default function ContactList({ visible }) {
                     });
                   }}
                 >
-                  <Text>Email: {f.email}</Text>
-                  <Text>Username:{f.username}</Text>
-                  <Text>Username:{user.username}</Text>
+                  {/* <Text>Email: {f.email}</Text>
+                  <Text>Username:{f.username}</Text> */}
+                  <Text style={styles.username}>{user.username}</Text>
                 </TouchableOpacity>
               </View>
             </>
@@ -68,10 +68,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     zIndex: -1,
-    padding: 10,
-    paddingBottom: 20,
+    padding: 25,
+    paddingLeft: 10,
+    paddingRight: 10,
     marginBottom: 20,
     // height: '20px',
+    backgroundColor: "#486581",
+
   },
   containerResults: {
     height: '80%',
@@ -85,4 +88,8 @@ const styles = StyleSheet.create({
     // min-width: max-content
     minWidth: 'max-content'
   },
+  username: {
+    fontSize: 24,
+    color: "#ffffff",
+  }
 });

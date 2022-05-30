@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Chatapp",
+    "description": "app description",
     "slug": "Chatapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,6 +21,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.yourcompany.yourappname",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

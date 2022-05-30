@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   containerResults: {
     height: '90%',
-    width: '80%',
+    width: '110%',
     alignItems: 'center',
     paddingTop: 80,
     zIndex: -1,

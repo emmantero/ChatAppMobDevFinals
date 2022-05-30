@@ -29,12 +29,13 @@ export default function Profile() {
       .catch((error) => alert(error.message));
   };
 
+
   return (
     <>
       <View style={styles.container}>
-        <Avatar.Text size={50} label="SMP" />
-        <Text>Email: {auth.currentUser?.email}</Text>
-        <Text>Name: {user.username}</Text>
+        <Avatar.Image size={100} source={require('../../assets/default-avatar.jpg')} style={styles.userImg} />
+        <Text style={styles.username}>{user.username}</Text>
+        <Text style={styles.email}>{auth.currentUser?.email}</Text>
         <TouchableOpacity
           onPress={handleSignOut}
           style={styles.buttonSignOut}
@@ -51,6 +52,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  userImg: {
+    // marginTop: 100,
+  },
+  username: {
+    fontSize: 38,
+  },
+  email: {
+    fontSize: 18
   },
   buttonSignOut: {
     backgroundColor: '#486581',
