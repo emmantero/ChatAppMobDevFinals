@@ -33,24 +33,24 @@ export default function ContactList({ visible }) {
       <ScrollView>
         {friends.length > 0 ? (
           friends.map((f) => (
-            <>
-              <View key={f.id} style={styles.container}>
-                <TouchableOpacity
-                  onPress={() => {
-                    console.log('navigateChat');
-                    navigation.navigate('Chat', {
-                      uid: f.uid,
-                      name: f.username,
-                      email: f.email,
-                    });
-                  }}
-                >
-                  {/* <Text>Email: {f.email}</Text>
+
+            <View key={f.uid} style={styles.container}>
+              <TouchableOpacity
+                onPress={() => {
+                  console.log('navigateChat');
+                  navigation.navigate('Chat', {
+                    uid: f.uid,
+                    name: f.username,
+                    email: f.email,
+                  });
+                }}
+              >
+                {/* <Text>Email: {f.email}</Text>
                   <Text>Username:{f.username}</Text> */}
-                  <Text style={styles.username}>{user.username}</Text>
-                </TouchableOpacity>
-              </View>
-            </>
+                <Text style={styles.username}>{user.username}</Text>
+              </TouchableOpacity>
+            </View>
+
           ))
         ) : (
           <View style={styles.container}>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     justifyContent: 'center',
     // min-width: max-content
-    minWidth: 'max-content'
+    // minWidth: 'max-content'
   },
   username: {
     fontSize: 24,
